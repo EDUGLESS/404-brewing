@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Brewing Co.</title>
+  <style>
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px #FF0000, -2px -2px #00FFFF; }
+      20% { text-shadow: -2px -2px #FF0000, 2px 2px #00FFFF; }
+      40% { text-shadow: 2px -2px #FF0000, -2px 2px #00FFFF; }
+      60% { text-shadow: -2px 2px #FF0000, 2px -2px #00FFFF; }
+      80% { text-shadow: 2px 0 #FF0000, -2px 0 #00FFFF; }
+      100% { text-shadow: 0 2px #FF0000, 0 -2px #00FFFF; }
+    }
+
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #00FF00;
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(to bottom, #000000, #0a0a0a);
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+    h1 {
+      font-size: 3rem;
+      animation: glitch 1s infinite;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #FFFFFF;
+    }
+    .cta {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .cta button {
+      background-color: #00FF00;
+      color: #000;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #00FF00;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cervezas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .cerveza {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 1px solid #00FF00;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .cerveza h3 {
+      color: #00FFFF;
+      margin-bottom: 0.5rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 0.8rem;
+    }
+    .qr-section, .terminal-section, .ecommerce-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .qr-section img {
+      max-width: 200px;
+      margin-top: 20px;
+    }
+    .contact-section {
+      background-color: #0a0a0a;
+      padding: 40px 20px;
+      color: #00FF00;
+      text-align: center;
+    }
+    .contact-section input, .contact-section textarea {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      padding: 10px;
+      background: #000;
+      border: 1px solid #00FF00;
+      color: #00FF00;
+      border-radius: 6px;
+    }
+    .contact-section button {
+      background: #00FF00;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .terminal-box {
+      background: #000;
+      color: #00FF00;
+      font-family: monospace;
+      padding: 20px;
+      border: 2px solid #00FF00;
+      width: 90%;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 20px auto;
+    }
+    .social-links a {
+      color: #00FFFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media screen and (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .tagline p { font-size: 1rem; }
+      .cta button { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>404 Brewing Co.</h1>
+    <div class="tagline">
+      <p>Hackeamos el sistema cervecero.</p>
+      <p>Rompiendo el código de la cerveza aburrida.</p>
+      <p>Descargando sabor… por favor, espera.</p>
+      <p>Cerveza no encontrada… hasta ahora.</p>
+    </div>
+    <div class="cta">
+      <button>Únete al 404 Club</button>
+      <button>Descubre nuestras cervezas</button>
+    </div>
+  </header>
+
+  <section class="terminal-section">
+    <h2>Bienvenido al sistema</h2>
+    <div class="terminal-box">
+      <p>root@404brewing:~$ sudo launch -beer-universe</p>
+      <p>Iniciando protocolos de sabor… ██████████ 100%</p>
+      <p>Acceso concedido. ¡Disfruta tu experiencia!</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nuestras Cervezas</h2>
+    <div class="cervezas">
+      <div class="cerveza">
+        <h3>Lag Beer</h3>
+        <p>Ligera, fresca y equilibrada. No se congela, solo se disfruta.</p>
+      </div>
+      <div class="cerveza">
+        <h3>Syntax Error</h3>
+        <p>Lúpulo intenso y amargor desafiante. Una falla que se convirtió en perfección.</p>
+      </div>
+      <div class="cerveza">
+        <h3>Deep Web</h3>
+        <p>Oscura, con secretos. Notas de café y chocolate para los exploradores del sabor.</p>
+      </div>
+      <div class="cerveza">
+        <h3>404 Not Found</h3>
+        <p>Suave, dorada y equilibrada. No la buscabas, pero aquí está.</p>
+      </div>
+      <div class="cerveza">
+        <h3>Malware</h3>
+        <p>Dulce al inicio, intensa en el fondo. Se infiltra en cada trago.</p>
+      </div>
+      <div class="cerveza">
+        <h3>ALT+TAB</h3>
+        <p>El cambio que necesitas. Ámbar y balanceada para alternar entre mundos.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="qr-section">
+    <h2>Escanea y accede a contenido secreto</h2>
+    <img src="qr-code-placeholder.png" alt="Código QR interactivo">
+  </div>
+
+  <div class="ecommerce-section">
+    <h2>Compra en línea</h2>
+    <p>Próximamente podrás adquirir nuestras cervezas desde esta plataforma. Mantente alerta…</p>
+    <button>Notificarme al lanzar</button>
+  </div>
+
+  <div class="contact-section">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre">
+      <input type="email" placeholder="Tu correo electrónico">
+      <textarea rows="4" placeholder="Mensaje o colaboración"></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+
+  <div class="social-links">
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">Discord</a>
+    <a href="#">X (Twitter)</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 404 Brewing Co. Todos los derechos reservados. “I’m not a bug, I’m a feature.”</p>
+  </div>
+</body>
+</html>
